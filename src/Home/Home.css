@@ -1,0 +1,72 @@
+
+
+.container{
+    position: relative;
+    display: flex;
+    margin: 3rem;
+    align-items: center;
+}
+
+.tags{
+    font-family: 'Merienda', cursive;
+    color: var(--text-color);
+    opacity: 0.4;
+    font-family: 16px;
+}
+.clr-black{
+    color: var(--text-color);
+}
+.clr-purple{
+    color: var(--cta-color);
+}
+.main-heading{
+    margin-block: 2rem;
+    font-family: 'Nunito';
+    font-size: 8rem;
+    font-style: normal;
+}
+
+.secondary-heading{
+    margin-block: 2rem;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.src-code-btn{
+    width: 20rem;
+    height: 3rem;
+    background-color: transparent;
+    box-sizing: border-box;
+    color: var(--cta-color);
+    border: 2px solid var(--cta-color);
+    border-radius: 8px;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+.contact-me{
+    margin-bottom: 10rem;
+}
+.sub-container-btn{
+    width: 10rem;
+    height: 3rem;
+    background-color: transparent;
+    box-sizing: border-box;
+    color: var(--cta-color);
+    border: 2px solid var(--cta-color);
+    border-radius: 4px;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+.hero-img{
+    height: 25rem;
+    margin-block: 10rem;
+    border-radius: 20rem;
+}
+
+
+.text-section{
+    margin-inline-end: 5rem;
+}

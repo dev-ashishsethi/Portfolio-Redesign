@@ -1,0 +1,30 @@
+.text{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: justify;
+    width: 50rem;
+}
+
+#skills{
+    margin-inline-end: 7rem;
+}
+
+.clr-purple{
+    color: var(--cta-color);
+}
+
+.skills-img{
+    height: 5rem;
+    margin-inline-end: 1rem;
+    margin-block-end: 1rem;
+}
+
+.skills-img-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 20rem;
+}
