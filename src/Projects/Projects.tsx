@@ -1,24 +1,30 @@
-import "./Project.css"
+import axios from "axios";
+import { useEffect, useState } from "react";
+import { ProjectCard, projectType } from "../components/ProjectCard/ProjectCard";
+import "./Project.css";
+
 export function Projects() {
-    return(
-        <div className="container" id="skills">
-      
+    const [projects,setProjects] = useState<projectType[]>([])
+    useEffect(()=>{
+            (async () => {
+                const response = await axios.get('https://portfolio.aashishsethii01.repl.co/projects')
+                setProjects(response.data);
+            })()
+    },[])
+  return (
+    <div className="container" id="projects">
       <div className="text-section">
-        <p className='tags'>&lt;section&gt;</p>
-        <p className='tags'>&lt;h1&gt;</p>
-        <h1 className='main-heading clr-black'>Projects </h1>
-        <span className='tags'>&lt;/h1&gt;</span>
-       
-        <p className='tags'>&lt;/section&gt;</p>
-        
+        <p className="tags">&lt;section&gt;</p>
+        <p className="tags">&lt;h1&gt;</p>
+        <h1 className="main-heading clr-black">Projects </h1>
+        <span className="tags">&lt;/h1&gt;</span>
+
+        <p className="tags">&lt;/section&gt;</p>
       </div>
-      <div className="project-card">
-        <div className="image-links-section">
-            {/* <img src="https://drive.google.com/uc?export=view&id=1H_2DSSu2Nre8gVyQWRzgmty4Ea8lYi9D" alt="" className="project-img"/> */}
-            {/* <img src="../../public/assets/projectDropShadow.png" alt="" className="project-shadow"/> */}
-        </div>
-        <span className="project-title">project title</span>
+      <div>
+        {projects.length>0 && projects.map((project)=><ProjectCard data={project}/>)}
+
       </div>
     </div>
-    )
+  );
 }
