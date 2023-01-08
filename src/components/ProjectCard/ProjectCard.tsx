@@ -14,14 +14,17 @@ type CustomInputProps = {
   }
 
 export const ProjectCard:React.FC<CustomInputProps> = ({data}) =>{
- return (   <div className="project-card" style={{backgroundImage:  `url(${data.imageLink})`}}>
+ return (   
+ <div>
+        <div className="project-card" style={{backgroundImage:  `url(${data.imageLink})`}}>
         <div className="project-card-body">
-          <h2 className="project-card-title">{data.heading}</h2>
           <div className="project-card-links">
             <a href={data.githubLink} className="github project-icon"  target="_blank"></a>
             <a href={data.liveLink} className="link project-icon" target="_blank"></a>
           </div>
         </div>
       </div>
+    <h2 className="project-card-title">{data.heading}</h2>
+</div>
  )
 }

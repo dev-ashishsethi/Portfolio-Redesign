@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { Loader } from "../components/Loader/Loader";
 import { ProjectCard, projectType } from "../components/ProjectCard/ProjectCard";
 import "./Project.css";
 
@@ -8,7 +9,7 @@ export function Projects() {
     useEffect(()=>{
             (async () => {
                 const response = await axios.get('https://portfolio.aashishsethii01.repl.co/projects')
-                setProjects(response.data);
+                setProjects(response.data.reverse());
             })()
     },[])
   return (
@@ -20,10 +21,11 @@ export function Projects() {
         <span className="tags">&lt;/h1&gt;</span>
 
         <p className="tags">&lt;/section&gt;</p>
-      </div>
-      <div>
-        {projects.length>0 && projects.map((project)=><ProjectCard data={project}/>)}
+     
+      <div className="project-showcase">
+        {projects.length>0 ? projects.map((project)=><ProjectCard data={project}/>):<Loader/>}
 
+      </div>
       </div>
     </div>
   );
