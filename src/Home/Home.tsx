@@ -7,7 +7,7 @@ export function Home() {
         <p className='tags'>&lt;html&gt;</p>
         <p className='tags'>&lt;head&gt;</p>
         <h1 className='main-heading clr-black'>Hi! </h1>
-        <span className='main-heading clr-black'>I’m <span className='main-heading clr-purple'>Ashish</span></span>
+        <h1 className='main-heading clr-black'>I’m <span className='main-heading clr-purple'>Ashish</span></h1>
         <span className='tags'>&lt;/head&gt;</span>
         <p className='tags'>&lt;title&gt;</p>
         <h2 className='secondary-heading'>I’m a Front end developer</h2>

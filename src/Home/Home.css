@@ -48,6 +48,10 @@
 .contact-me{
     margin-bottom: 10rem;
 }
+.contact-me:hover{
+    background-color: var(--cta-color);
+    color: white;
+}
 .sub-container-btn{
     width: 10rem;
     height: 3rem;

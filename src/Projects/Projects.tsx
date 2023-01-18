@@ -19,13 +19,10 @@ export function Projects() {
         <p className="tags">&lt;h1&gt;</p>
         <h1 className="main-heading clr-black">Projects </h1>
         <span className="tags">&lt;/h1&gt;</span>
-
-        <p className="tags">&lt;/section&gt;</p>
-     
       <div className="project-showcase">
         {projects.length>0 ? projects.map((project)=><ProjectCard data={project}/>):<Loader/>}
-
       </div>
+      <p className="tags">&lt;/section&gt;</p>
       </div>
     </div>
   );
