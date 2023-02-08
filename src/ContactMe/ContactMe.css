@@ -1,0 +1,4 @@
+.send-btn:hover{
+    background-color: var(--cta-color);
+    color: white;
+}
