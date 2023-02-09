@@ -3,7 +3,7 @@ export function Sidebar() {
     return (
     <div className='subcontainer'>
       
-      <button className='sub-container-btn contact-me'>Contact Me</button>
+      <a href="#contactMe"><button className='sub-container-btn contact-me'>Contact Me</button></a>
       <div className='subcontainer-btn-section'>
        <a href="#about">
          <button className='subcontainer-btn ' id="about-btn" data-hover="About Me"><span>01</span></button>

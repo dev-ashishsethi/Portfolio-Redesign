@@ -2,3 +2,23 @@
     background-color: var(--cta-color);
     color: white;
 }
+input{
+    height: 2rem;
+    width: 15rem;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    font-size: medium;
+    background-color: #1010100d;
+    border: 1px solid black;
+    color: var(--text-color);
+}
+
+textarea{
+    width: 30.7rem;
+    resize: vertical;
+    font-size: medium;
+    font-family: 'Nunito';
+    background-color: #1010100d;
+    border: 1px solid black;
+    color: var(--text-color);
+}
