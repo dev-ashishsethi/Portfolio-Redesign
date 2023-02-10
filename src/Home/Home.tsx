@@ -15,7 +15,7 @@ export function Home() {
         <p className='tags'>&lt;body&gt;</p>
         <button className='src-code-btn'>View source code</button>
       </div>
-      <img src="../public/assets/hero.jfif" alt="" className='hero-img'/>
+      <img src="../assets/hero.jfif" alt="" className='hero-img'/>
 
       
     </div>

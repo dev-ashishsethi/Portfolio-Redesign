@@ -15,12 +15,12 @@ export function Skills() {
         
       </div>
       <div className="skills-img-section">
-            <img src="../../public/assets/html.webp" alt="html image" className="skills-img"/>
-            <img src="../../public/assets/css.webp" alt="css image" className="skills-img"/>
-            <img src="../../public/assets/js.webp" alt="js image" className="skills-img"/> 
-            <img src="../../public/assets/react.webp" alt="react image" className="skills-img"/>
-            <img src="../../public/assets/typescript.png" alt="typescript image" className="skills-img" />
-            <img src="../../public/assets/redux.jpg" alt="redux image" className="skills-img"/>
+            <img src="../assets/html.webp" alt="html image" className="skills-img"/>
+            <img src="../assets/css.webp" alt="css image" className="skills-img"/>
+            <img src="../assets/js.webp" alt="js image" className="skills-img"/> 
+            <img src="../assets/react.webp" alt="react image" className="skills-img"/>
+            <img src="../assets/typescript.png" alt="typescript image" className="skills-img" />
+            <img src="../assets/redux.jpg" alt="redux image" className="skills-img"/>
       </div>
     </div>
     )
