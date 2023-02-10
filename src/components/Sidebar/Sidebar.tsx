@@ -1,4 +1,8 @@
 import "./Sidebar.css"
+import github from '../../assets/github.png'
+import linkedin from "../../assets/linkedin.png"
+import twitter from "../../assets/twitter.png"
+import dev from "../../assets/dev.png"
 export function Sidebar() {
     return (
     <div className='subcontainer'>
@@ -22,10 +26,10 @@ export function Sidebar() {
       <div>
       <p className='follow'>Follow Me</p>
       <div>
-        <a href=""><img src="../public/assets/github.png" alt="" className='links'/></a>
-        <a href=""><img src="../public/assets/linkedin.png" alt="" className='links'/></a>
-        <a href=""><img src="../public/assets/twitter.png" alt="" className='links'/></a>
-        <a href=""><img src="../public/assets/dev.png" alt="" className='links'/></a>
+        <a href=""><img src={github} alt="" className='links'/></a>
+        <a href=""><img src={linkedin} alt="" className='links'/></a>
+        <a href=""><img src={twitter} alt="" className='links'/></a>
+        <a href=""><img src={dev} alt="" className='links'/></a>
       </div>
 
       </div>

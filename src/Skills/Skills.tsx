@@ -1,4 +1,10 @@
 import "./Skills.css"
+import html from "../assets/html.webp"
+import css from "../assets/css.webp"
+import js from "../assets/js.webp"
+import react from "../assets/react.webp"
+import typescript from '../assets/typescript.png'
+import redux from "../assets/Redux.jpg"
 export function Skills() {
     return(
     <div className="container" id="skills">
@@ -15,12 +21,12 @@ export function Skills() {
         
       </div>
       <div className="skills-img-section">
-            <img src="../assets/html.webp" alt="html image" className="skills-img"/>
-            <img src="../assets/css.webp" alt="css image" className="skills-img"/>
-            <img src="../assets/js.webp" alt="js image" className="skills-img"/> 
-            <img src="../assets/react.webp" alt="react image" className="skills-img"/>
-            <img src="../assets/typescript.png" alt="typescript image" className="skills-img" />
-            <img src="../assets/redux.jpg" alt="redux image" className="skills-img"/>
+            <img src={html} alt="html image" className="skills-img"/>
+            <img src={css} alt="css image" className="skills-img"/>
+            <img src={js} alt="js image" className="skills-img"/> 
+            <img src={react} alt="react image" className="skills-img"/>
+            <img src={typescript} alt="typescript image" className="skills-img" />
+            <img src={redux} alt="redux image" className="skills-img"/>
       </div>
     </div>
     )

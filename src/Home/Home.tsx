@@ -1,4 +1,5 @@
 import "./Home.css"
+import hero from "../assets/hero.jfif"
 export function Home() {
     return (
     <div className="container">
@@ -15,7 +16,7 @@ export function Home() {
         <p className='tags'>&lt;body&gt;</p>
         <button className='src-code-btn'>View source code</button>
       </div>
-      <img src="../assets/hero.jfif" alt="" className='hero-img'/>
+      <img src={hero} alt="" className='hero-img'/>
 
       
     </div>
